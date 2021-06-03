@@ -14,8 +14,8 @@ typedef struct dados
 
 int main ()
 {
-    dados j1,j2;
-    int i,j;
+    dados j1 ,j2;
+    int i ,j;
 
 
     fgets(j1.nome,50,stdin);

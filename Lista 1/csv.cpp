@@ -34,8 +34,7 @@ int main ()
 
     fp = fopen("lista.csv","w");
 
-    if(fp > 0)
-    {
+    if (fp > 0) {
         fprintf(fp,"CPF,nome,snome,endereço,telefone\n");
         for (int i = 0; i < n; i++) {
             fprintf(fp, "%s,%s,%s,%s,%s\n", usuarios[i].cpf,
@@ -48,8 +47,8 @@ int main ()
     }
 
     fp = fopen("lista.csv","r");
-    if(fp > 0)
-    {
+    if (fp > 0) {
+
         for (int i = 0; i <= n; i++) {
 
             fgets(l,240,fp);

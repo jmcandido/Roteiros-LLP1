@@ -5,9 +5,8 @@ void soma (int matriz_1[30][30],int matriz_2[30][30],int matriz_3 [30][30],int m
 {
     int l,c;
 
-    for (l = 0; l < m;l++){
-        for (c = 0; c < n; c++)
-        {
+    for (l = 0; l < m;l++) {
+        for (c = 0; c < n; c++) {
              matriz_3[l][c] = matriz_1[l][c] + matriz_2[l][c];
              printf("%d ",matriz_3[l][c]);
         }
@@ -24,18 +23,16 @@ int main ()
 
     scanf("%d%d",&m,&n);
 
-    for(l = 0 ; l < m; l++)
-    {
-        for(c = 0; c < n; c++)
-        {
+    for (l = 0 ; l < m; l++) {
+
+        for (c = 0; c < n; c++) {
             scanf("%d",&matriz_1[l][c]);
         }
     }
 
-    for(l = 0 ; l < m; l++)
-    {
-        for(c = 0; c < n; c++)
-        {
+    for (l = 0 ; l < m; l++) {
+
+        for(c = 0; c < n; c++) {
             scanf("%d",&matriz_2[l][c]);
         }
     }

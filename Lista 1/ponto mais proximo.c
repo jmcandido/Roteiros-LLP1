@@ -14,11 +14,11 @@ float calc_d (t_ponto p1, t_ponto p2)
     return sqrt( pow(p2.x-p1.x,2) + pow(p2.y-p1.y, 2));
 }
 
-int main ()
-{
-    int n,i_menor_d = 0,i;
+int main () {
+
+    int n , i_menor_d = 0, i;
     t_ponto P;
-    float menor_d,dist;
+    float menor_d, dist;
 
     scanf("%d %d",&P.x,&P.y);
 
@@ -26,13 +26,11 @@ int main ()
 
     t_ponto pontos[n];
 
-    for(i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         scanf("%d %d", &pontos[i].x,&pontos[i].y);
     }
 
-    for( i = 0; i < n; i++)
-    {
+    for ( i = 0; i < n; i++) {
          dist = calc_d(pontos[i],P);
 
         if(i == 0)

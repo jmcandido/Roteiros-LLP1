@@ -25,8 +25,7 @@ int main ()
     scanf("%d",&j2.chutes);
     scanf("%d",&j2.gols);
 
-    if(j2.gols > j1.gols)
-    {
+    if(j2.gols > j1.gols) {
         printf("%s (%d)",j2.nome,j2.idade);
     }else
     {

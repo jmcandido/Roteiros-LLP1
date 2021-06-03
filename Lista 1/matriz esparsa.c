@@ -19,16 +19,13 @@ int main ()
 
     scanf("%d %d", &m,&n);
 
-    for( l = 0; l < m; l++)
-    {
-        for(c = 0 ; c < n; c++)
-        {
+    for( l = 0; l < m; l++) {
+
+        for(c = 0 ; c < n; c++){
             scanf("%d", &m1[l][c]);
 
             if(m1[l][c] == 0)
-            {
-                t_nulos++;
-            }
+                t_nulos++;     
         }
     }
 

@@ -15,14 +15,13 @@ int main ()
 {
     Membros candidatos [100];
 
-    int quant_cand,nulos = 0,i = 0,p = 0,x =0,votos = 0,numero;
+    int quant_cand ,nulos = 0 ,i = 0 ,p = 0 ,x = 0, votos = 0, numero;
     float total_votos = 0,porcen,max_porce = 0;
 
 
     scanf("%d",&quant_cand);
 
-    for(i = 0; i < quant_cand; i++)
-    {
+    for (i = 0; i < quant_cand; i++) {
         candidatos[i].quant_votos = 0;
         scanf("%d",&candidatos[i].numero);
 
@@ -31,20 +30,15 @@ int main ()
 
     }
 
-    while(1)
+    while(1) {
 
-    {
         scanf("%d",&numero);
 
         if(numero <= 0)
-        {
             break;
-        }
 
-        for(i = 0; i < quant_cand; i++)
-        {
-            if(candidatos[i].numero == numero)
-            {
+        for(i = 0; i < quant_cand; i++) {
+            if(candidatos[i].numero == numero) {
                 candidatos[i].quant_votos++;
                 x++;
             }
@@ -56,38 +50,27 @@ int main ()
         }
 
         if(x <= 0)
-        {
             nulos++;
-        }
 
         x = 0;
         total_votos++;
     }
 
-    for (p = 0; p < quant_cand; p++)
-    {
+    for (p = 0; p < quant_cand; p++) {
         porcen = candidatos[p].quant_votos * 100 / total_votos;
 
         if(porcen > max_porce)
-        {
             max_porce = porcen;
-        }
-
     }
 
-    for(int p = 0; p < quant_cand; p++)
-    {
+    for(int p = 0; p < quant_cand; p++) {
         porcen = candidatos[p].quant_votos * 100 / total_votos;
 
         if(porcen == max_porce)
-        {
             printf("%.2f - %d - %s VENCEDOR\n",porcen,candidatos[p].numero,candidatos[p].nome);
-        }
         else
             printf("%.2f - %d - %s\n",porcen,candidatos[p].numero,candidatos[p].nome);
-
-
     }
 
-    printf("%.2f - Nulos",nulos * 100 / total_votos);
+            printf("%.2f - Nulos",nulos * 100 / total_votos);
 }

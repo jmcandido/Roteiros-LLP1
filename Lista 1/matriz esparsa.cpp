@@ -8,15 +8,15 @@ int main(void) {
 
     int dimensao = m * n;
 
-    for(int i = 0; i < dimensao; i++) {
+    for (int i = 0; i < dimensao; i++) {
         cin >> valor;
         if(!valor) qtdZeros++;
     }
 
-    if((double) qtdZeros / dimensao > 0.7) {
+    if((double) qtdZeros / dimensao > 0.7)
         cout << "A matriz é esparsa";
-    } else {
+    else 
         cout << "A matriz não é esparsa";
-    }
+
     return 0;
 }

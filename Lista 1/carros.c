@@ -35,12 +35,11 @@ int main ()
     if (c1.ano < c2.ano)
     {
         printf("%s %s",c1.marca,c1.modelo);
-    }
-    else if(c1.preco < c2.preco)
-    {
+
+    }else if (c1.preco < c2.preco){
+
         printf("%s %s",c1.marca,c1.modelo);
-    }
-    else
+    }else
     {
         printf("%s %s",c2.marca,c2.modelo);
     }
