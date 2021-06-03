@@ -16,8 +16,7 @@ int main ()
     ControleDeGastos gastos;
     Despesa despesas;
 
-    for(i = 0; i < N; i++)
-    {
+    for (i = 0; i < N; i++) {
         getline(cin,nome);
         despesas.setNome(nome);
         cin >> valor;
@@ -30,19 +29,18 @@ int main ()
 
     getline(cin, tipo);
    
-    if (gastos.existeDespesaDoTipo(tipo))
-    {   
-        for(int i = 0; i < N; i++)
-        {   
-          if(gastos.getDespesa(i).getTipoDeGasto() == tipo)
-          {
+    if (gastos.existeDespesaDoTipo(tipo)){  
+        for (int i = 0; i < N; i++){   
+          if(gastos.getDespesa(i).getTipoDeGasto() == tipo){
               cout << gastos.getDespesa(i).getNome() << ", R$ " << gastos.getDespesa(i).getValor() << endl;
           }
         }
     }else
-    {
+        {
             cout << "Nenhuma despesa do tipo especificado" << endl;
-    }
+        }
 
     cout << gastos.calculaTotalDeDespesas(tipo) << "/" << gastos.calculaTotalDeDespesas() << endl;
+
+    return 0;
 }

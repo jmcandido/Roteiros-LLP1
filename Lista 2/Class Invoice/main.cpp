@@ -7,8 +7,8 @@ int main()
 {   
    Invoice invoice[2];
 
-    for(int i = 0; i < 2; i++)
-    {
+    for (int i = 0; i < 2; i++) {
+
          cin >> invoice[i].numero;
          getchar();
          getline (cin, invoice[i].descricao);
@@ -19,18 +19,14 @@ int main()
             invoice[i].qtd = 0;
             
          if (invoice[i].preco < 0)
-            invoice[i].preco = 0.0;
-         
-           
+            invoice[i].preco = 0.0;      
     }
 
-    for(int i = 0; i < 2; i++)
-    {
+    for (int i = 0; i < 2; i++) {
 
         cout << invoice[i].numero << " - " << invoice[i].descricao << " - " << invoice[i].qtd << " - " << invoice[i].preco << " - " ;
         cout << invoice[i].getInvoiceAmount() << endl;
-
     }
-  
 
+   return 0;
 }

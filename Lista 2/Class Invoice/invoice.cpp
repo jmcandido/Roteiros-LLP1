@@ -1,6 +1,5 @@
 #include "invoice.h"
 
-float Invoice::getInvoiceAmount()
-{
+float Invoice::getInvoiceAmount(){
     return preco * qtd;
 }

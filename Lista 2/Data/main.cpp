@@ -15,10 +15,11 @@ int main()
 
     Data d(dia, mes, ano);
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         d.AvancarDia();
     }
 
     cout << d.getDia() << "/" << d.getMes() << "/" << d.getAno() << endl;
+
+    return 0;
 }

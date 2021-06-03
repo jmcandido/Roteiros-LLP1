@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main ()
-{
+int main (){
     int n;
 
     cin >> n;
@@ -20,4 +19,6 @@ int main ()
         getchar();
         cout << funcionario.nome << " " << funcionario.sobrenome << " - " << funcionario.salario  << " - " << funcionario.getSalarioAnual() << endl;
     }
+
+    return 0;
 }

@@ -14,8 +14,7 @@ int main ()
     getchar();
 
 
-    for(int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
          getline(cin, nome);
          getline(cin, sobrenome);
          cin >> salario;
@@ -25,8 +24,8 @@ int main ()
          funcionarios.print();
          funcionarios.aumentaSalario(0.1);
          cout << funcionarios.getSalarioAnual() << endl;
-        
-
     }
+
+    return 0;
 
 }
